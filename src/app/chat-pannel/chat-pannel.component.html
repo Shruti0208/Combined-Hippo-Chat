@@ -1,0 +1,79 @@
+<div class="chat-window">
+    <div class="chats">
+    <div class="user-join">
+       <p>{{initialTime|date:'short'}}</p>
+    </div>
+  
+   <div class="allMessage1"> 
+      <div class="visitor">
+         <span class="visitor-badge">C</span>
+           </div>
+      <div class="messageContent1">
+       <div class="time2">
+          <p>Customer</p>
+          <p>{{initialTime|date:'shortTime'}}</p>
+          </div>
+    <div class="message outgoing">
+      
+       <p>Hey there welcome to Hippo Chat.</p>
+       
+      </div>
+    </div>
+   </div> 
+ 
+ 
+    <div *ngFor="let current of chatService.msgArr[chatService.chatid].senderArray">
+    
+     
+    <div *ngIf="current.userType=='user'">
+       <div class="allMessage"> 
+          <div class="visitor">
+             <span class="visitor-badge">U</span>
+               </div>
+          <div class="messageContent">
+             <div class="time">
+             <p>user</p>
+             <p>{{current.time|date:'shortTime'}}</p>
+          </div>
+        <div class="message incoming">
+           <p>{{current.message}}</p>
+           
+          </div>
+        </div>
+       </div> 
+ </div>
+ 
+ <div *ngIf="(current.userType=='customer')">
+    <div class="allMessage1"> 
+       <div class="visitor">
+          <span class="visitor-badge">C</span>
+            </div>
+       <div class="messageContent1">
+          <div class="time2">
+          <p>Customer</p>
+          <p>{{current.time|date:'shortTime'}}</p>
+          </div>
+     <div class="message outgoing">
+        <!-- <h5>user1</h5> -->
+        <p>{{current.message}}</p>
+        <!-- <p class="time">{{current.time|date:'shortTime'}}</p> -->
+       </div>
+     </div>
+    </div> 
+     </div>
+ 
+    
+  </div>
+  </div>
+  <!-- </div> -->
+  <div class="users-window">
+  
+       
+        <div class="user-input">
+            <input #myinput type="text" placeholder="Type a message">
+            <button (click)="userChat(myinput.value)">User</button>
+            <button (click)="customerChat(myinput.value)">Customer</button>
+          </div>
+         
+ </div>
+ </div>           

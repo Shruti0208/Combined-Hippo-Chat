@@ -1,0 +1,40 @@
+
+     <!-- <link rel="stylesheet" href="mystyle.css"> -->
+     <title>Hippo</title>
+     
+     <div class="ind">
+     <h1>Register your business</h1>  
+     <h3>WITH HIPPO</h3>
+     
+     
+     
+     <form #signUp="ngForm" (ngSubmit)="userlogin(signUp.value)">
+          
+        <label for="businessname"></label><br />
+        <input type="text" class="maininput" name="businessname" placeholder="Enter business Name" required ><br />
+        
+        <label for="fullname"></label><br />
+        <input type="text" id="username" class="maininput" name="username" placeholder="Enter Contact Name" required ><br />
+       
+        <label for="email"></label><br />
+        <input type="email" id="email" class="maininput"  name="email" placeholder="Email" required [(ngModel)]="signupObj.email"><br />
+       
+        <label for="password"></label><br />
+        <input type="password" id="password" class="maininput" name="password" placeholder="Password" required ><br />
+        
+        <label for="phonenumber"></label><br />
+        <input type="tel" id="pno" class="maininput" name="pno" placeholder="Enter Phone Number" required ><br>
+      
+        <input type="checkbox" id="agree" name="agree"  required>
+        <label for="agree"> I agree to your <span style="color: blue;">Terms of Services</span> and <span style="color: blue;">Private policies</span></label><br><br>
+       <div class="divvv">
+         <button id="signup1"  style="text-align: center; color: white" type="submit" value="sign up" required>Sign Up</button>
+
+       </div>
+        
+        <p style="text-align: center;">Already have an account? <button type="button"  routerLink='/login' style="color:blue;">Sign In</button></p>
+     
+      </form>
+    
+  </div>
+

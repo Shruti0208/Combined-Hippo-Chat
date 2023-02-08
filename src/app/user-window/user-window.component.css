@@ -1,0 +1,43 @@
+*{
+    margin: 0px;
+}
+.users-list{
+    font-size: 20px;
+    line-height: 2;
+    margin-left: 10px;
+    transform: translate3d(0,0,0);
+}
+.visitor{
+    
+    border-radius: 50px;
+    background-color: rgb(124, 124, 15);
+    color: white;
+    width: 35px;
+    aspect-ratio: 1;
+    margin: 2px;
+}
+.visitor-badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.vis1{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: flex-start;
+    margin: 10px;
+}
+.combine-user{
+    display: flex;
+    flex-direction: column;
+    line-height: 90%;
+}
+.small-text{
+    font-size: 12px;
+}
+.msgnum:hover{
+    background-color: rgb(244, 244, 228);
+    line-height: 20%;
+}

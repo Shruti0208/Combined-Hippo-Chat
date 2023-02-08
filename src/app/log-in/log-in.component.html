@@ -1,0 +1,25 @@
+   log-in
+   
+     <div class="mydiv">
+     <h1>Sign in your account</h1>   
+    
+     <form #logIn="ngForm" (ngSubmit)="onLogin(logIn.value)">
+        <label for="email"></label>
+        <input type="email" id="email" class="maininput" name="email" placeholder="Email" required ngModel ><br />
+        <label for="password"></label><br />
+        <input type="password" id="password" class="maininput"name="password" placeholder="Password" required>
+      
+     
+        <a routerLink='/password' style="color:blue; align-self: flex-end;">Forget Password?</a>
+        
+        
+         
+        <br><button  id="sigin" style="text-align: center; color: white" type="submit" >Sign In</button> 
+      </form>
+     </div>
+     <br><br>
+     <div class="class">
+        <p style="text-align: center;">Don't have an account?<a routerLink='..' style="color:blue;">Sign Up</a></p>
+      </div>
+ 
+   

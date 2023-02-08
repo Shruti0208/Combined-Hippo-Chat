@@ -1,0 +1,22 @@
+<div class="users-window">
+    
+    <div class="users-list">
+        <div *ngFor="let chat of chatsArr">
+        <!-- <span class="visitor-badge">{{chat.username[0]}}</span> -->
+          <div (click)="selectUser(chat.key)" class="msgnum">
+        <div class="vis1">
+        <div class="visitor">
+          <span class="visitor-badge">{{chat.username[0]}}</span>
+            </div>
+       <div class="combine-user">
+       <p>{{chat.username}}</p>
+      
+       <p class="small-text">Welcome to Hippo</p>
+       </div>
+
+    </div>
+
+    </div>
+</div>
+</div>
+</div>

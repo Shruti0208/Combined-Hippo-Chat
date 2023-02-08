@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+}
+.chat-window{
+    /* width: 74%; */
+    /* border-radius: 10px; */
+    background-color:white;
+    /* height: 92vh; */
+    border-bottom: 1px solid #F2F4F6;
+
+}
+.chats{
+ min-height: 78vh;   
+ /* height: ; */
+ padding: 10px;
+ box-shadow: 1px 1px 13px 1px rgb(0 0 0 / 6%);
+}
+.user-join{
+    font-size: 0.9rem;
+    color:rgb(0, 0, 0);
+    background-color: white;
+    border-radius: 50px;
+    width: max-content;
+    padding: 7px 20px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+}
+.message{
+    color:white;
+    background-color:#16449b;
+    padding: 5px 15px;
+    max-width: 400px;
+    margin-bottom: 15px;
+    border-radius: 0px 10px 10px 10px ;
+    /* margin-left: 20px; */
+}
+.visitor {
+    
+    border-radius: 50%;
+    background-color: rgb(124, 124, 15);
+    color: white;
+    width: 2%;
+    aspect-ratio: 1;
+    margin: 2px;
+    height: 2%;
+}
+.visitor-badge{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font:10px;
+}
+.outgoing{
+    margin-left: auto;
+    color: black;
+    background-color: #f0f4f8;
+    border-radius: 10px 0px 10px 10px;
+}
+.user-input
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    padding: 10px;
+    height: 10vh;
+}
+input{
+    background-color: white;
+    padding: 10px 20px;
+    outline: none;
+    width: 100%;
+    border-radius: 50px;
+}
+button{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px;
+    letter-spacing: 0.5px;
+    background-color:#16449b;
+    border: 1px solid rgb(0, 0, 0);
+    font: 10px;
+    color: white;
+}
+.allMessage{
+    display: flex;
+}
+/* .messsageContent{
+    display: flex;
+    flex-direction: column;
+} */
+.allMessage1{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+.messageContent1{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: end; */
+    align-items: flex-end;
+}
+.time{
+    font-size: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.time2{
+    font-size: 10px;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+}

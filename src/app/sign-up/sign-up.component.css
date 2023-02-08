@@ -1,0 +1,77 @@
+body{
+    background-image: url('https://hippochat.io/en/assets/images/bitmap.jpg');
+    height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+h1,h3{
+    font-family:Arial, Helvetica, sans-serif; ;
+    text-align: center;
+    
+}
+/* input{
+width:100%;
+margin: 3px; 
+} */
+.divvv{
+  height: 25px;
+}
+
+#sigin{
+    background-color: rgb(4, 4, 161);
+    width: 109%;
+    height: 150%;
+    
+}
+#signup1{
+    background-color: rgb(4, 4, 161);
+    width: 109%;
+    height: 150%;
+}
+#signup{
+    background-color: rgb(4, 4, 161);
+    width: 107%;
+    height: 153%;
+}
+#click{
+    text-align: right;
+    color: blue;
+}
+#req{
+   color: red; 
+   line-height: 0.01em;
+   font-size: 0.8 px;
+   text-align: start;
+}
+.mydiv{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+    width:100%;
+}
+
+.maininput{
+    padding: 15px;
+    width:100%;
+}
+
+.ind{
+    width:100%; 
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+   
+}
+.check1{
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+   
+    
+}
